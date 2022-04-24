@@ -5,7 +5,7 @@ import LandingPage from "./components/views/LandingPage/LandingPage";
 function App() {
   return (
     <Routes>
-      <Route path="/Covid_Guest_SignIn_Submit" element={<LandingPage />} />
+      <Route path="/" element={<LandingPage />} />
     </Routes>
   );
 }
