@@ -5,9 +5,9 @@ module.exports = function (app) {
     "/api",
     createProxyMiddleware({
       target:
-        process.env.NODE_ENV === "development"
-          ? "http://localhost:4000"
-          : "https://qr-guest-signin.herokuapp.com/",
+        process.env.NODE_ENV === "production"
+          ? "https://qr-guest-signin.herokuapp.com/"
+          : "http://localhost:4000",
       changeOrigin: true,
     })
   );
