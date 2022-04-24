@@ -7,7 +7,7 @@ module.exports = function (app) {
       target:
         process.env.NODE_ENV === "development"
           ? "http://localhost:4000"
-          : "https://fortravel.herokuapp.com/",
+          : "https://qr-guest-signin.herokuapp.com/",
       changeOrigin: true,
     })
   );
